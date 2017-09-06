@@ -1,0 +1,105 @@
+.menu-line {
+    background: rgba(0, 0, 0, 0) url("/images/footerbackground.png") repeat scroll 0 0;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  position: relative;
+    max-width: 220px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  font-family: 'Proxima Nova Thin';
+  padding: 15px 6px;
+  font-size: 12px;
+  color: #dadfe6;
+    line-height: 14px;
+}
+.topmenu > li > a.active, 
+/*.submenu a:hover {color: #ddbe86;}*/
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 7px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+    text-align: left;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.topmenu li a:hover {
+    color: #fff;
+}
+
+.submenu li a:hover {
+    color: #282828;
+    text-decoration: underline !important;
+}
+
+.profile {
+    max-width: 140px;
+}
+
+.profile li {
+    text-align: left;
+}
+
+.profile li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.user-profile {
+    background-image: url('../../images/user.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px;
+    background-size: 23px;
+}

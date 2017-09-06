@@ -643,14 +643,14 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label span {
     display: inline-block;
-    width: 21px;
-    height: 21px;
+    width: 19px;
+    height: 19px;
     margin: -1px 10px 0 0;
     vertical-align: bottom;
-    background: url('../../images/checkbox.png') left top no-repeat;
+    background: url('../../images/checkbox.png') left top / 40px no-repeat;
     cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label span {
-    background:url('../../images/checkbox.png') -23px top no-repeat;
+    background:url('../../images/checkbox.png') -20px top / 40px no-repeat;
 }
