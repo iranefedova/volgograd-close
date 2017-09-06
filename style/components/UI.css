@@ -633,3 +633,24 @@ ul.list-grey > li:before{
     border-radius: 50%;
     background: #dadfe6;
 }
+
+
+/* CHECKBOX STYLE */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin: -1px 10px 0 0;
+    vertical-align: bottom;
+    background: url('../../images/checkbox.png') left top no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url('../../images/checkbox.png') -23px top no-repeat;
+}

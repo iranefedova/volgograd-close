@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Бюджет Волгоградской области</title>
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="/style/main.css" rel="stylesheet" />
+    <link href="/style/media.css" rel="stylesheet" />
+</head>
+
+<body>
+   
+   <link rel="stylesheet" href="/style/components/auth.css"> <!-- СТИЛИ АВТОРИЗАЦИИ -->
+   <link rel="stylesheet" href="/style/components/UI.css"> <!-- для чекбокса -->
+   
+    <div class="auth-container flex flex-vertical flex-center">
+        <div class="auth-block">
+            <div class="flex flex-vertical">
+                <div class="logo">
+                    <a href="/" class="picture-link"><img src="/images/gerb.png"></a>
+                </div>
+                <div>
+                    <h3 class="title">Бюджет</h3>
+                    <h3 class="title">Волгоградской области</h3>
+                </div>
+            </div>
+            <hr class="marg-t marg-b">
+            <form id="auth">
+                <input type="text" id="login" placeholder="Логин" class="small-marg-b" required>
+                <input type="password" id="password" placeholder="Пароль" class="small-marg-b" required>
+                <input type="checkbox" id="remember">
+                <label for="remember"><span></span>Запомнить пароль</label>
+                <a href="main.html" id="enter" class="btn-yellow-noshw text-center small-marg-t">Войти</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
