@@ -2,17 +2,17 @@
     background: rgba(0, 0, 0, 0) url("/images/footerbackground.png") repeat scroll 0 0;
 }
 
-ul {
+.menu-line ul {
   margin: 0 !important;
   padding: 0 !important;
   list-style: none;
 }
-ul:after {
+.menu-line ul:after {
   content: "";
   display: table;
   clear: both;
 }
-a {
+.menu-line a {
   text-decoration: none;
   display: block;
   transition: .3s linear;
