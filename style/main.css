@@ -44,7 +44,7 @@ body {
     font: 0.9em/20px 'Proxima Nova', Arial, sans-serif;
     background: #f4f5f6;
     max-width: 2560px;
-    min-width: 1000px;
+    min-width: 860px;
     margin: 0px auto;
     -webkit-text-size-adjust: none;
     color: #323232;
@@ -213,7 +213,7 @@ a:active {
     max-width: 1140px;
     min-width: 680px;
     margin: 0 auto;
-    width: 70vw;
+    width: 80vw;
 }
 
 .flex {
