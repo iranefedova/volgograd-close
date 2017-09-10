@@ -12,8 +12,7 @@
 
 .switch__btn {
   display: inline-block;
-  padding: 4px 8px;
-	margin: 2px;
+  padding: 6px 10px;
   position: relative;
   text-align: center;
   -webkit-transition: background 600ms ease, color 600ms ease;
@@ -182,14 +181,16 @@
     line-height: 16px;
 }
 
+/*
 .table__custom tr:hover{
   background: #ebebeb;
 }
+*/
 
 .table__custom tr td:first-child{
     text-align: left;
     padding-left: 20px;
-    box-shadow:  inset -5px 0px 5px -2px rgba(214,220,228,1);
+    box-shadow:  -5px 0 3px -3px rgb(180, 180, 180) inset;
     text-align: left;
 }
 
@@ -259,7 +260,7 @@
 
 .table th, td{
     text-align: center;
-    padding: 10px;
+    padding: 8px;
 }
 
 .table th{
@@ -315,10 +316,21 @@
 .arrow-grey {
     font-size: 26px;
     color: #c3c3c3;
+    cursor: pointer;
+    float: left;
 }
 
 .arrow-grey ~ p {
     margin: 0;
+    margin-top: 4px;
+}
+
+.subrow-1 {
+    padding-left: 30px !important;
+}
+
+.subrow-2 {
+    padding-left: 70px !important;
 }
 
 /*---ACCORDION---*/
@@ -397,16 +409,16 @@ ul.accordion-menu{
 }
 
 .selector-btn{
-    background-image: url("/images/select_arrow.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
     background-color: #f6bd68;
-    margin-top: 2px;
-    margin-left: -34px;
+    background-image: url("/images/select_arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 34px;
+    margin-left: -35px;
+    margin-top: 1px;
+    pointer-events: none;
+    width: 34px;
     z-index: 1;
-    pointer-events:none
 }
 
 .selector-input:active ~ .selector-btn{

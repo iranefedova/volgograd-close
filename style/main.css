@@ -98,7 +98,7 @@ h3 {
 h4 {
     font-family: 'Proxima Nova';
     font-size: 16px;
-    color: #323232;
+    color: #797979;
     line-height: 20px;
     margin: 0;
     padding: 0;
@@ -503,6 +503,10 @@ a:active {
     margin-right: 20px;
 }
 
+.flex > .shadow-block {
+    height: 100%;
+}
+
 .shadow-block-small:nth-child(3n+3) {
     margin-right: 0;
 }
@@ -525,18 +529,22 @@ a:active {
 }
 
 .page__name{
-	margin: 30px 0 20px 0;
+	margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .path__link {
     color: #5282c3;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: underline;
 }
 
-.gray-text{
-    color: #919599;
+.grey-text {
+    color: #b2b2b2;
+    font-size: 12px;
+    line-height: 18px;
 }
+
 .path__current, .date, .page__subtitle{
     color: #919599;
     font-size: 14px;
@@ -586,4 +594,15 @@ a:active {
 
 .sub-docs {
     margin-left: 80px;
+}
+
+.header-row {
+    background-image: url('../images/map_back.png');
+    padding: 15px;
+    background-size: cover;
+    box-shadow: 0 2px 5px 2px #d6d6d6;
+}
+
+div#diagram {
+    display: none;
 }

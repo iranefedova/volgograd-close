@@ -1,0 +1,35 @@
+.incomes-first {
+    background-color: rgb(252, 207, 155);
+}
+
+.incomes-second {
+    background-color: rgb(253, 231, 206);
+}
+
+.costs-first {
+    background-color: rgb(184, 216, 238);
+}
+
+.costs-second {
+    background-color: rgb(213, 231, 242);
+}
+
+.proficit-first {
+    background-color: rgb(230, 230, 230);
+}
+
+.sources-first {
+    background-color: rgb(224, 217, 238);
+}
+
+.rest-first {
+    background-color: rgb(198, 238, 236);
+}
+
+.second, .third {
+    display: none;
+}
+
+td h6 {
+    margin-top: 5px;
+}
