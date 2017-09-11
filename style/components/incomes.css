@@ -1,0 +1,32 @@
+.big-circle  {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #fae38e, #74cea6);
+    position: absolute;
+    z-index: 1;
+}
+
+.big-circle strong {
+    font-size: 20px;
+}
+
+.small-circle  {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #fae38e, #74cea6);
+    position: absolute;
+    z-index: 2;
+}
+
+.small-circle strong {
+    font-size: 16px;
+}
+
+.white-circle {
+    background-color: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+}
