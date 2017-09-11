@@ -98,10 +98,14 @@ h3 {
 h4 {
     font-family: 'Proxima Nova';
     font-size: 16px;
-    color: #797979;
+    color: #323232;
     line-height: 20px;
     margin: 0;
     padding: 0;
+}
+
+h4.grey {
+    color: #797979;
 }
 
 h5 {
@@ -200,6 +204,10 @@ a:active {
 
 .f16{
 	font-size: 16px;
+}
+
+.f14{
+	font-size: 14px !important;
 }
 
 .header {

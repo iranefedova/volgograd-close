@@ -140,7 +140,7 @@
                     <div class="flex flex-between">
                         <div class="marg-r flex flex-column flex-between">
                             <div>
-                                <h4>Динамика доходов на 01.07.2017</h4>
+                                <h4 class="grey">Динамика доходов на 01.07.2017</h4>
                                 <div class="selector small-marg-t">
                                      <select name="type-of-incomes" id="type-of-incomes" size="1" class="selector-input">
                                        <option selected>Вид дохода</option>
@@ -154,7 +154,7 @@
                         </div>
                         <div class="flex flex-column flex-between">
                             <div>
-                                <h4>Динамика расходов на 01.07.2017</h4>
+                                <h4 class="grey">Динамика расходов на 01.07.2017</h4>
                                 <div class="diagram__toggle flex-wrap">
                                     <div class="switch marg-r small-marg-t ">
                                         <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="true" type="radio" checked>
@@ -178,7 +178,7 @@
                     <div class="flex flex-between marg-t">
                         <div class="marg-r flex flex-column flex-between">
                             <div>
-                                <h4>Поступление источников на 01.07.2017</h4>
+                                <h4 class="grey">Поступление источников на 01.07.2017</h4>
                                 <div class="selector small-marg-t">
                                      <select name="type-of-source" id="type-of-source" size="1" class="selector-input">
                                        <option selected>Вид источника</option>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="flex flex-column flex-between">
                             <div>
-                                <h4>Погашение источников на 01.07.2017</h4>
+                                <h4 class="grey">Погашение источников на 01.07.2017</h4>
                                 <div class="selector small-marg-t">
                                      <select name="type-of-source-1" id="type-of-source-1" size="1" class="selector-input">
                                        <option selected>Вид источника</option>
@@ -677,9 +677,9 @@
             
             $(hide).animate({
                     height: 'hide'
-                }, 150, function() {
+                }, 200, function() {
                 $(show).animate({
-                    height: 'show'}, 150);
+                    height: 'show'}, 200);
             });
         }
     </script>

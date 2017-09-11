@@ -55,18 +55,18 @@
     }
     
     nav .topmenu > li:last-child {
-        max-width: 145px !important;
+        max-width: 230px !important;
     }
     
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1030px) {
     nav .topmenu > li {
-        max-width: 80px !important;
+        max-width: 85px !important;
     }
     
     nav .topmenu > li:last-child {
-        max-width: 112px !important;
+        max-width: 150px !important;
     }
     
 }
