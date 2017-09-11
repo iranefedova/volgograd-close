@@ -379,7 +379,7 @@ a:active {
 
 .search {
     background-color: #e9edf1;
-    height: 125%;
+    height: 123%;
     margin-left: 15px;
     width: 290px;
     margin-top: -5px;
@@ -538,7 +538,7 @@ a:active {
 
 .page__name{
 	margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .path__link {

@@ -69,5 +69,9 @@
         max-width: 150px !important;
     }
     
+    .flex-adapt-wrap {
+        flex-wrap: wrap;
+    }
+    
 }
 

@@ -161,7 +161,7 @@
 /*---TABLE---*/
 
 .tableDiv {
-    border-right: 1px solid #a8b3c4;
+    border-right: 1px solid #d4d5d8;
     max-height: 90vh;
 }
 
@@ -265,28 +265,31 @@
 
 .table th{
     color: #ffffff;
-    background-color: #037cd3;
-    border-right: 1px solid #479fdf;
-    border-bottom: 1px solid #479fdf;
-/*    z-index: 1;*/
+    background-color: #82b4ce;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    font-weight: normal;
 }
 
 .table tr:first-child th:first-child {
     text-align: center;
-    border-left: 1px solid #a8b3c4;
+    border-left: 1px solid #d4d5d8;
+    white-space: normal;
 }
 
 .table tr td:first-child {
-    border-left: 1px solid #a8b3c4;
+    border-left: 1px solid #c3c4c7;
+    white-space: normal;
 }
 
 
 .table td{
-    border-right: 1px solid #a8b3c4;
-    border-bottom: 1px solid #a8b3c4;
+    border-right: 1px solid #c3c4c7;
+    border-bottom: 1px solid #c3c4c7;
+    white-space: nowrap;
 }
 
-.table td:last-child, .table tr:first-child th:last-child {
+.table td:last-child, .table tr th:last-child {
     border-right: none;
 }
 
