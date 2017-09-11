@@ -14,6 +14,10 @@
     background-color: rgb(213, 231, 242);
 }
 
+.costs-third {
+    background-color: rgb(241, 247, 251);
+}
+
 .proficit-first {
     background-color: rgb(230, 230, 230);
 }
@@ -26,10 +30,38 @@
     background-color: rgb(198, 238, 236);
 }
 
-.second, .third {
+.second, .third, .fourth {
     display: none;
 }
 
 td h6 {
     margin-top: 5px;
+}
+
+.accordion-table tr td:first-child {
+    width: 400px;
+}
+
+.subrow-1 {
+    padding-left: 30px !important;
+}
+
+.subrow-2 {
+    padding-left: 70px !important;
+}
+
+.subrow-3 {
+    padding-left: 90px !important;
+}
+
+.table-without-head {
+    border-top: 1px solid #a8b3c4;
+}
+
+.empty-td {
+    border-bottom: 1px solid #a8b3c4;
+    border-left: none !important;
+    box-shadow: none !important;
+    z-index: 0;
+    background-color: transparent !important;
 }

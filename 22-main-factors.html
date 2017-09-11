@@ -113,7 +113,8 @@
 
                 <link href="/style/components/UI.css" rel="stylesheet" />
 
-                <div class="page__row">
+                <div class="switch_box">
+                    <div class="page__row">
                         <div class="diagram__toggle">
                             <input id="datepicker" type="text" class="dateform marg-r" value="Дата" /> <!-- Календарь -->
                             <div class="dateform_img_display">
@@ -123,15 +124,15 @@
                         <div class="diagram__toggle">
                             <div class="switch">
                                 <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="true" type="radio" checked>
-                                <label for="toggle-on1" class="switch__btn" onclick="showBlock('#diagram', '#table');">Таблица</label>
+                                <label for="toggle-on1" class="switch__btn change_table">Таблица</label>
                                 <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="false" type="radio">
-                                <label for="toggle-off1" class="switch__btn" onclick="showBlock('#table', '#diagram');">Диаграмма</label>
+                                <label for="toggle-off1" class="switch__btn change_diagram">Диаграмма</label>
                             </div>
                             <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
                         </div>
                 </div>
                 
-                <div id="diagram">
+                <div class="diagram_box" style="display:none;">
                  <div class="header-row marg-t">
                     <h3>Динамика на 01.07.2017</h3>
                 </div>
@@ -287,7 +288,7 @@
                 </div>
                 </div>
                 
-                <div id="table">
+                <div class="table_box">
                     <div class="header-row marg-t">
                         <h3>Структура показателей бюджета на 01.07.2017</h3>
                     </div>
@@ -305,10 +306,10 @@
                         
                         <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
                         <div class="tableDiv">
-                            <table id="main-factors" class="table table__custom">
+                            <table id="main-factors" class="table table__custom accordion-table">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2" class="cell-scrollable">Наименование показателя</th>
+                                        <th rowspan="2" class="cell-scrollable" width="500">Наименование показателя</th>
                                         <th colspan="3">01.07.2016</th>
                                         <th colspan="3">01.07.2017</th>
                                         <th colspan="2">Динамика исполнения</th>
@@ -567,6 +568,83 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Общий объём фонда оплаты труда и взносы по обязательному социальному страхованию на выплаты по оплате труда работников и иные выплаты работникам, в т.ч.</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td class="subrow-3"><p>государственных (муниципальных) органов</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td class="subrow-3"><p>работников автономных и бюджетных учреждений</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Социальные выплаты гражданам, в т.ч.</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td class="subrow-3"><p>стипендии</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td class="subrow-3"><p>расходы на обязательное медицинское страхование неработающего населения</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td class="subrow-1"><h6>Недостаток средств (-) на финансовое обеспечение расходов раздела I</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                     <tr class="second costs-second">
                                         <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел II. Первоочередные расходы</p></td>
                                         <td></td>
@@ -578,8 +656,96 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Обслуживание гос. долга</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Расходы на первоочередные нужды</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Расходы на прочие нужды</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                     <tr class="second costs-second">
                                         <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел III. Расходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Капитальные вложения в объекты недвижимости</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Закупка товаров, работ, услуг</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Премии и гранты</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Субсидии корпорациям</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td class="subrow-2"><p>Резервные средства</p></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -602,6 +768,17 @@
                                     </tr>
                                     <tr class="first costs-first">
                                         <td><h6>Итого расходов</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1"><h6>Итого расходов без учёта безвозмездных поступлений</h6></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -656,9 +833,132 @@
                                         <td></td>
                                     </tr>
                                 </tbody>
+                                <tbody>
+                                   <tr>
+                                       <td colspan="9" height="20" class="empty-td"></td>
+                                   </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>Кредиторская задолженность</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>Просроченная кредиторская задолженность по данным годового отчета</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>Просроченная кредиторская задолженность по данным справочной таблицы</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>фонд оплаты труда</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>взносы на обязательное социальное страхование на выплаты денежного содержания и иные выплаты работникам</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>предоставление субсидий населению на оплату жилья и коммунальных услуг</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>оплата коммунальных услуг</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>обеспечение мер социальной поддержки отдельных категорий граждан</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subrow-1">
+                                            <p>выплаты на обязательное медицинское страхование неработающего населения</p>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
+                </div>
                 </div>
 
             </div>
@@ -673,15 +973,17 @@
     </div>
 
     <script>
-        function showBlock(hide, show) {
-            
-            $(hide).animate({
-                    height: 'hide'
-                }, 200, function() {
-                $(show).animate({
-                    height: 'show'}, 200);
-            });
-        }
+         $(".diagram__toggle .switch label").click(function (){
+          if ($(this).hasClass("change_diagram")){
+           $(this).closest(".switch_box").find(".diagram_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".table_box").slideUp("slow");
+          }
+
+          if ($(this).hasClass("change_table")){
+           $(this).closest(".switch_box").find(".table_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".diagram_box").slideUp("slow");
+          }
+         });
     </script>
     
     <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
@@ -705,16 +1007,21 @@
         
         $('.spoiler').click(function() {
             var $parent = $(this).parent("td").parent(".first");
+            var $sp = $(this);
             $(this).toggleClass("fa-angle-right").toggleClass("fa-angle-down");
             
             if ($parent.length < 1) {
                $parent = $(this).parent("td").parent(".second"); 
-               $parent.nextUntil(".second", ".third").slideToggle(200);
+               $parent.nextUntil(".second, .first").slideToggle(200);
                return;
             }
             
-            $parent.siblings(".third").hide(100); 
+            $parent.nextUntil(".first", ".fourth").hide(100); 
+            $parent.nextUntil(".first", ".third").hide(100); 
             $parent.nextUntil(".first", ".second").slideToggle(200);
+            $parent.nextUntil(".first", ".second").each(function() {
+                $(this).children("td:first").children("i").removeClass("fa-angle-down").addClass("fa-angle-right");
+            });
         });
     </script>
 
