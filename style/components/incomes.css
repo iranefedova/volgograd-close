@@ -30,3 +30,70 @@
     height: 75%;
     border-radius: 50%;
 }
+
+.incomes p {
+    width: 200px;
+}
+
+@media screen and (max-width: 1030px) {
+    
+    .incomes p {
+        width: 150px !important;
+        font-size: 12px;
+    }
+    
+    .incomes .big-circle {
+        width: 150px;
+        height: 150px;
+        left: 230px !important;
+    }
+    
+    .incomes .big-circle strong {
+        font-size: 16px;
+    }
+    
+    .incomes .small-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .incomes .small-circle strong {
+        font-size: 14px;
+    }
+    
+    .incomes #small-first {
+        bottom: 115px !important;
+        left: 316px !important;
+    }
+    
+    .incomes #small-second {
+        bottom: 115px !important;
+        left: 200px !important;
+    }
+    
+    .incomes #small-third {
+        bottom: 225px !important;
+        left: 170px !important;
+    }
+    
+    .incomes #small-fourth {
+        bottom: 225px !important;
+        left: 340px !important;
+    }
+    
+    .incomes p:last-child {
+        bottom: 230px !important;
+        left: 460px !important;
+    }
+    
+    .incomes #p-first {
+        bottom: 70px !important;
+        left: 430px !important;
+    }
+    
+    .incomes #p-second {
+        bottom: 105px !important;
+        left: 35px !important;
+    }
+    
+}
