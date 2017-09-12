@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Бюджет Волгоградской области</title>
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="/style/main.css" rel="stylesheet" />
+    <link href="/style/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/datepicker/jquery.datepick.css">
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <div class="flex flex-between">
+                        <div class="flex flex-vertical">
+                            <div class="logo">
+                                <a href="main.html" class="picture-link"><img src="/images/gerb.png" /></a>
+                            </div>
+                            <div>
+                                <h3 class="title">Бюджет</h3>
+                                <h3 class="title">Волгоградской области</h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-vertical">
+                            <div class="search flex flex-vertical">
+                                <form class="search-form flex flex-between">
+                                    <input placeholder="Поиск..." type="text" name="search_word" />
+                                    <input type="submit" value=" " />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <link rel="stylesheet" href="/style/components/menu.css">
+            <!-- стили меню -->
+
+            <div class="menu-line">
+                <div class="container flex flex-between">
+                    <nav class="marg-r">
+                        <ul class="topmenu">
+                            <li><a href="">Финансовый паспорт</a>
+                                <ul class="submenu">
+                                    <li><a href="22-main-factors.html">Основные показатели бюджета</a>
+                                    </li>
+                                    <li><a href="">Кассовое планирование</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Управление доходами</a>
+                                <ul class="submenu">
+                                    <li><a href="24-structure-of-incomes.html">Структура доходов и исполнение доходов</a>
+                                    </li>
+                                    <li><a href="25-dynamics-of-incomes.html">Динамика доходов</a></li>
+                                    <li><a href="26-tax-revenue-management.html">Управление налоговыми доходами</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Управление расходами</a>
+                                <ul class="submenu">
+                                    <li><a href="">Управление государственными программами</a>
+                                    </li>
+                                    <li><a href="">Приоритетные расходы бюджета</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Чемпионат мира по футболу 2018</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Оперативное управление</a></li>
+                                    <li><a href="">Управление резервным фондом</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Контрольные мероприятия</a></li>
+                            <li><a href="">Мониторинг изменения федерального законодательства</a></li>
+                        </ul>
+                    </nav>
+                    <div class="profile flex flex-vertical">
+                        <ul class="topmenu">
+                            <li class="user-profile"><a href="">Иванов Иван Иванович</a>
+                                <ul class="submenu">
+                                    <li><a href="">Настройки профиля</a>
+                                    </li>
+                                    <li><a href="index.html">Выход</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="path marg-t">
+                    <a href="main.html" class="path__link">Главная</a>
+                    <span>/</span>
+                    <a href="#" class="path__link">Управление доходами</a>
+                    <span>/</span>
+                    <span class="grey-text">Управление налоговыми доходами</span>
+                </div>
+
+                <h1 class="page__name">Управление налоговыми доходами</h1>
+
+                <link href="/style/components/UI.css" rel="stylesheet" />
+                
+                <div class="header-row marg-t">
+                    <h3>Информация о динамике, задолженности, недоимке и собираемости налогов и сборов на 01.07.2017</h3>
+                </div>
+                <div class="shadow-block">
+                   <div class="switch_box">
+                    <div class="page__row">
+                        <div class="diagram__toggle">
+                            <input id="datepicker" type="text" class="dateform marg-r" value="Дата" /> <!-- Календарь -->
+                            <div class="dateform_img_display">
+                                <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
+                            </div>
+                        </div>
+                        <div class="diagram__toggle">
+                            <div class="switch">
+                                <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="true" type="radio" checked>
+                                <label for="toggle-on1" class="switch__btn change_table">Таблица</label>
+                                <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="false" type="radio">
+                                <label for="toggle-off1" class="switch__btn change_diagram">Диаграмма</label>
+                            </div>
+                            <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                        </div>
+                </div>
+                
+                <div class="diagram_box" style="display:none;">
+
+                        <h4 class="marg-t">Задолженность по налогам и сборам на 01.07.2017</h4>
+                        <div class="diagram__toggle">
+                                    <div class="selector small-marg-t ">
+                                         <select name="type-of-debt" id="type-of-debt" size="1" class="selector-input">
+                                           <option selected>Вид задолженности</option>
+                                         </select>
+                                         <div class="selector-btn"></div>
+                                    </div>
+                                </div>
+                       <div class="marg-t flex flex-center">
+                        <div><img src="images/diagram/26_1.png" alt="Задолженность по налогам и сборам"></div>
+                    </div>
+                    <h4 class="marg-t">Недоимка по налогам и сборам на 01.07.2017</h4>
+                        <div class="diagram__toggle">
+                                    <div class="selector small-marg-t">
+                                         <select name="type-of-arrears" id="type-of-arrears" size="1" class="selector-input">
+                                           <option selected>Вид недоимки</option>
+                                         </select>
+                                         <div class="selector-btn"></div>
+                                    </div>
+                                </div>
+                       <div class="marg-t flex flex-center">
+                        <div><img src="images/diagram/26_2.png" alt="Недоимка по налогам и сборам"></div>
+                    </div>
+                    <h4 class="marg-t">Собираемость по налогам и сборам в бюджетную систему РФ на территории Волгоградской области на 01.07.2017</h4>
+                        <div class="diagram__toggle">
+                                    <div class="selector small-marg-t">
+                                         <select name="type-of-collection" id="type-of-collection" size="1" class="selector-input">
+                                           <option selected>Вид собираемости</option>
+                                         </select>
+                                         <div class="selector-btn"></div>
+                                    </div>
+                                </div>
+                       <div class="flex flex-center flex-wrap">
+                        <div><img src="images/diagram/26_3.png" alt="Собираемость по налогам и сборам" class="marg-t"></div>
+                        <div><h5 class="text-center marg-t">Структура собираемости на 01.07.2017</h5><img src="images/diagram/26_4.png" alt="Собираемость по налогам и сборам" class="small-marg-t"></div>
+                    </div>
+
+                </div>
+                
+                <div class="table_box">
+                        
+                        <link rel="stylesheet" href="/style/components/tables.css">
+                        
+                        <div class="diagram__toggle">
+                                    <div class="selector small-marg-t marg-r">
+                                         <select name="type-of-debt" id="type-of-debt" size="1" class="selector-input">
+                                           <option selected>Вид налога/сбора</option>
+                                         </select>
+                                         <div class="selector-btn"></div>
+                                    </div>
+                                    <div class="tabs small-marg-t">
+                                      <input id="tab_1" class="check" name="tab" type="radio">
+                                      <label for="tab_1" id="tab_l1">Задолженность</label>
+                                      <input id="tab_2" class="check" name="tab" type="radio" checked="checked">
+                                      <label for="tab_2" id="tab_l2">Недоимка</label>
+                                      <input id="tab_3" class="check" name="tab" type="radio">
+                                      <label for="tab_3" id="tab_l3">Собираемость</label>
+                                   </div>
+                            </div>
+                        
+                        <span class="date page__subtitle text-right marg-t">Единица измерения: млн. руб.</span>
+                        <div class="tableDiv">
+                            <table id="arrears" class="table table__custom accordion-table">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="cell-scrollable"></th>
+                                        <th rowspan="2">Всего</th>
+                                        <th colspan="7">федеральным налогам и сборам</th>
+                                        <th rowspan="2">региональным налогам и сборам</th>
+                                        <th rowspan="2">местным налогам и сборам</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Всего</th>
+                                        <th>налог на прибыль организаций</th>
+                                        <th>налог на добавленную стоимость</th>
+                                        <th style="min-width: 150px;">из графы 5 налог на добавленную стоимость по товарам (работам, услугам), реализуемым на территории РФ</th>
+                                        <th>платежи за пользование природными ресурсами</th>
+                                        <th>из графы 7 налог на добычу полезных ископаемых</th>
+                                        <th>остальные федеральные налоги и сборы</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.01.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.02.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за январь (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за январь (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="footer big-marg-t">
+            <div class="container">
+                <p>&copy; Комитет финансов Волгоградской области, 2017</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         $(".diagram__toggle .switch label").click(function (){
+          if ($(this).hasClass("change_diagram")){
+           $(this).closest(".switch_box").find(".diagram_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".table_box").slideUp("slow");
+          }
+
+          if ($(this).hasClass("change_table")){
+           $(this).closest(".switch_box").find(".table_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".diagram_box").slideUp("slow");
+          }
+         });
+    </script>
+    
+    <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.datepick.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <script>
+        $("#datepicker").datepick({
+            dateFormat: 'dd.mm.yyyy',
+            showOnFocus: true,
+            showTrigger: '#calImg',
+            showAnim: 'fadeIn',
+        })
+    </script>
+    
+    <script src="js/tableHeadFixer.js"></script>
+    <script>
+        $(document).ready(function() {
+			$("#arrears").tableHeadFixer({"head" : true, "left" : 1}); 
+        });
+        
+        $('.spoiler').click(function() {
+            var $parent = $(this).parent("td").parent(".first");
+            var $sp = $(this);
+            $(this).toggleClass("fa-angle-right").toggleClass("fa-angle-down");
+            
+            if ($parent.length < 1) {
+               $parent = $(this).parent("td").parent(".second"); 
+               $parent.nextUntil(".second, .first").slideToggle(200);
+               return;
+            }
+            
+            $parent.nextUntil(".first", ".fourth").hide(100); 
+            $parent.nextUntil(".first", ".third").hide(100); 
+            $parent.nextUntil(".first", ".second").slideToggle(200);
+            $parent.nextUntil(".first", ".second").each(function() {
+                $(this).children("td:first").children("i").removeClass("fa-angle-down").addClass("fa-angle-right");
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
