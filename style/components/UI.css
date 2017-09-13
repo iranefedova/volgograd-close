@@ -8,6 +8,8 @@
 	border: 2px solid #dadfe6;
 	border-radius: 10px;
     white-space: nowrap;
+    padding: 2px;
+    background: #fff;
 }
 
 .switch__btn {
@@ -26,7 +28,6 @@
 .switch input[type="radio"].toggle + label {
   cursor: pointer;
   min-width: 60px;
-    background: #fff;
 }
 
 .switch input[type="radio"].toggle + label:hover {
@@ -289,7 +290,7 @@
     white-space: nowrap;
 }
 
-.table td:last-child, .table tr th:last-child {
+.table td:last-child {
     border-right: none;
 }
 

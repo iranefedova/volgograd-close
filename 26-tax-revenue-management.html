@@ -190,16 +190,17 @@
                                          <div class="selector-btn"></div>
                                     </div>
                                     <div class="tabs small-marg-t">
-                                      <input id="tab_1" class="check" name="tab" type="radio">
+                                      <input id="tab_1" class="check" name="tab" type="radio" checked="checked">
                                       <label for="tab_1" id="tab_l1">Задолженность</label>
-                                      <input id="tab_2" class="check" name="tab" type="radio" checked="checked">
+                                      <input id="tab_2" class="check" name="tab" type="radio">
                                       <label for="tab_2" id="tab_l2">Недоимка</label>
                                       <input id="tab_3" class="check" name="tab" type="radio">
                                       <label for="tab_3" id="tab_l3">Собираемость</label>
                                    </div>
                             </div>
                         
-                        <span class="date page__subtitle text-right marg-t">Единица измерения: млн. руб.</span>
+                        <div id="check_2" class="for_tabs" style="display:none;" >
+                            <span class="date page__subtitle text-right marg-t">Единица измерения: млн. руб.</span>
                         <div class="tableDiv">
                             <table id="arrears" class="table table__custom accordion-table">
                                 <thead>
@@ -273,10 +274,808 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.03.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 2 месяца (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 2 месяца (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.04.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 квартал (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 квартал (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.05.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 4 месяца (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 4 месяца (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.06.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 5 месяцев (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 5 месяцев (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Недоимка на 01.07.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 полугодие (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 полугодие (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-                </div>
+                        </div>
+                        
+                        <div id="check_1" class="for_tabs">
+                            <span class="date page__subtitle text-right marg-t">Единица измерения: млн. руб.</span>
+                            <div class="tableDiv">
+                            <table id="debt" class="table table__custom accordion-table">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="cell-scrollable"></th>
+                                        <th rowspan="2">Всего</th>
+                                        <th colspan="2">федеральным налогам и сборам</th>
+                                        <th rowspan="2">региональным налогам и сборам</th>
+                                        <th rowspan="2">местным налогам и сборам</th>
+                                        <th rowspan="2">налогам со специальным налоговым режимом</th>
+                                        <th rowspan="2">единому социальному налогу</th>
+                                        <th rowspan="2">платежам в государственные внебюджетные фонды</th>
+                                        <th rowspan="2">Всего доходов по страховым взносам на обязательное социальное страхование</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Всего</th>
+                                        <th>в т.ч. налог на прибыль организаций</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.01.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.02.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за январь (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за январь (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.03.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 2 месяца (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 2 месяца (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.04.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 квартал (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 1 квартал (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.05.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 4 месяца (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 4 месяца (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="proficit-first">
+                                        <td><h6>Задолженность на 01.06.2017г.</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 5 месяцев (%)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">Рост/снижение за 5 месяцев (+/-)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                            <div class="tableDiv big-marg-t">
+                            <table id="debt" class="table table__custom">
+                                <thead>
+                                    <tr>
+                                        <th class="cell-scrollable"></th>
+                                        <th>на 01.01.17</th>
+                                        <th>на 01.06.17</th>
+                                        <th>Рост/снижение, тыс. руб.</th>
+                                        <th>Рост/снижение, %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><h6>Задолженность по налогу на доходы физических лиц</h6></td>
+                                        <td>863 934</td>
+                                        <td>535 081</td>
+                                        <td>-328 853</td>
+                                        <td>61,9</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6>Задолженность по налогу на имущество физических лиц</h6></td>
+                                        <td>417 676</td>
+                                        <td>295 970</td>
+                                        <td>-121 706</td>
+                                        <td>70,9</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6>Задолженность по налогу на имущество организаций</h6></td>
+                                        <td>785 311</td>
+                                        <td>159 580</td>
+                                        <td>-625 731</td>
+                                        <td>20,3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6>Задолженность по транспортному налогу</h6></td>
+                                        <td>1 347 487</td>
+                                        <td>1 033 228</td>
+                                        <td>-314 259</td>
+                                        <td>76,7</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">с организаций</p></td>
+                                        <td>71 536</td>
+                                        <td>24 178</td>
+                                        <td>47 358</td>
+                                        <td>33,8</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">с физических лиц</p></td>
+                                        <td>1 275 951</td>
+                                        <td>1 009 050</td>
+                                        <td>266 901</td>
+                                        <td>79,1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6>Задолженность по земельному налогу</h6></td>
+                                        <td>776 039</td>
+                                        <td>335 567</td>
+                                        <td>440 472</td>
+                                        <td>43,2</td>
+                                    </tr>
+                                    <tr class="proficit-first totals">
+                                        <td><h6>Итого</h6></td>
+                                        <td>5 537 934</td>
+                                        <td>3 392 654</td>
+                                        <td>-2 145 280</td>
+                                        <td>61,3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                
+                        <div id="check_3" class="for_tabs" style="display:none;">
+                           <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                            <div class="tableDiv">
+                                <table class="table table__custom" id="collection">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование кода бюджетной классификации доходов</th>
+                                            <th>Начислено к уплате</th>
+                                            <th>Поступления в бюджет</th>
+                                            <th>ФБ</th>
+                                            <th>КБ суб РФ</th>
+                                            <th>Уровень собираемости, %</th>
+                                            <th>Уровень собираемости на 01.01.2017г., %</th>
+                                            <th>Уровень собираемости на 01.02.2017г., %</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Налог на прибыль организаций</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на прибыль организаций, зачисляемый в бюджеты субъектов Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на доходы физических лиц</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на автомобильный бензин, производимый на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на прямогонный бензин, производимый на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на дизельное топливо, производимое на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на моторные масла для дизельных и (или) карбюраторных (инжекторных) двигателей, производимые на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на вина, фруктовые вина, игристые вина (шампанские), винные напитки, изготавливаемые без добавления ректификованного этилового спирта, произведенного из пищевого сырья, и (или) спиртованных виноградного или иного фруктового сусла, и (или) винного дистиллята, и (или) фруктового дистиллята, производимые на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на пиво, производимое на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на алкогольную продукцию с объёмной долей этилового спирта свыше 9 процентов (за исключением пива, вин, фруктовых вин, игристых вин (шампанских), винных напитков, изготавливаемых без добавления ректификованного этилового спирта, произведенного из пищевого сырья, и (или) спиртованных виноградного или иного фруктового сусла, и (или) винного дистиллята, и (или) фруктового дистиллята), производимую на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на сидр, пуарэ, медовуху, производимые на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Акцизы на средние дистилляты, производимые на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог, взимаемый в связи с применением упрощенной системы налогооблажения</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Единый налог на вмененный доход для отдельных видов деятельности</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Единый сельскохозяйственный налог</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог, взимаемый в связи с применением патентной системы налогообложения</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на имущество физических лиц</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на имущество организаций</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Транспортный налог</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Транспортный налог с организаций</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Транспортный налог с физических лиц</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на игорный бизнес</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Земельный налог</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на добычу полезных ископаемых</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на добычу полезных ископаемых в виде углеводородного сырья</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на добычу общераспространенных полезных ископаемых</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Налог на добычу полезных ископаемых (за исключением полезных ископаемых в виде природных алмазов)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сборы за пользование объектами животного мира и за пользование объектами водных биологических ресурсов</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Регулярные платежи за пользование недрами при пользовании недрами на территории Российской Федерации</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                 </div>
                 </div>
 
@@ -284,13 +1083,13 @@
             </div>
 
         </div>
-
-        <div class="footer big-marg-t">
+    </div>
+    
+    <div class="footer big-marg-t">
             <div class="container">
                 <p>&copy; Комитет финансов Волгоградской области, 2017</p>
             </div>
         </div>
-    </div>
 
     <script>
          $(".diagram__toggle .switch label").click(function (){
@@ -303,6 +1102,18 @@
            $(this).closest(".switch_box").find(".table_box").slideDown("slow");
            $(this).closest(".switch_box").find(".diagram_box").slideUp("slow");
           }
+         });
+    </script>
+    
+    <script>
+         $(".tabs .check").click(function (){
+             var $num = $(this).attr('id').split('_')[1];
+             
+              $(this).closest(".switch_box").find("div.for_tabs").hide("250");
+              $(this).closest(".switch_box").find("div#check_" + $num).show("250");
+
+//           $(this).closest(".switch_box").find(".diagram_box").slideDown("slow");
+//           $(this).closest(".switch_box").find(".table_box").slideUp("slow");
          });
     </script>
     
@@ -323,6 +1134,8 @@
     <script>
         $(document).ready(function() {
 			$("#arrears").tableHeadFixer({"head" : true, "left" : 1}); 
+			$("#debt").tableHeadFixer({"head" : true, "left" : 1}); 
+			$("#collection").tableHeadFixer({"head" : true, "left" : 1}); 
         });
         
         $('.spoiler').click(function() {
