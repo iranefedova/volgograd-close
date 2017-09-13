@@ -36,6 +36,7 @@
 
 td h6 {
     margin-top: 5px;
+    overflow: hidden;
 }
 
 .accordion-table tr td:first-child {

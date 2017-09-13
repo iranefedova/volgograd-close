@@ -76,7 +76,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="">Оперативное управление</a></li>
-                                    <li><a href="">Управление резервным фондом</a></li>
+                                    <li><a href="30-fund-management.html">Управление резервным фондом</a></li>
                                 </ul>
                             </li>
                             <li><a href="">Контрольные мероприятия</a></li>
@@ -189,7 +189,7 @@
                                          </select>
                                          <div class="selector-btn"></div>
                                     </div>
-                                    <div class="tabs small-marg-t">
+                                    <div class="tabs small-marg-t for_check">
                                       <input id="tab_1" class="check" name="tab" type="radio" checked="checked">
                                       <label for="tab_1" id="tab_l1">Задолженность</label>
                                       <input id="tab_2" class="check" name="tab" type="radio">
@@ -1106,11 +1106,11 @@
     </script>
     
     <script>
-         $(".tabs .check").click(function (){
+         $(".for_check .check").click(function (){
              var $num = $(this).attr('id').split('_')[1];
              
-              $(this).closest(".switch_box").find("div.for_tabs").hide("250");
-              $(this).closest(".switch_box").find("div#check_" + $num).show("250");
+              $(this).closest(".switch_box").find("div.for_tabs").slideUp("250");
+              $(this).closest(".switch_box").find("div#check_" + $num).slideDown("250");
 
 //           $(this).closest(".switch_box").find(".diagram_box").slideDown("slow");
 //           $(this).closest(".switch_box").find(".table_box").slideUp("slow");
