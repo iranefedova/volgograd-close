@@ -1,3 +1,85 @@
 .grey-block {
     background: #f6f6f6;
+    padding: 20px;
+    align-self: center;
+}
+
+.grey-text {
+    color: #928e8e;
+    font-size: 14px !important;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio + label {
+  cursor: pointer;
+}
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #dadfe6;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffbe62;
+  opacity: 0;
+  transition: all .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+
+.for-diagram {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.diagram {
+    background: #98b3cd;
+    box-shadow: 0 2px 5px 2px #d6d6d6;
+    height: 60px;
+    padding-right: 20px;
+}
+
+.filled {
+    content: "";
+    height: 100%;
+    background: #397dc2;
+}
+
+.filled p {
+    margin-right: -35px;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
 }

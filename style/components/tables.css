@@ -39,6 +39,10 @@ td h6 {
     overflow: hidden;
 }
 
+.table tr td:first-child p {
+    overflow: hidden;
+}
+
 .accordion-table tr td:first-child {
     width: 400px;
 }
