@@ -4,6 +4,10 @@
     cursor: pointer;
 }
 
+.label-accordion:hover {
+    background: #fafafa;
+}
+
 .graphic {
     display: none;
 }
