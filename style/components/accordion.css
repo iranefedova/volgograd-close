@@ -1,0 +1,9 @@
+.label-accordion {
+    border: 1px solid #dadfe6;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.graphic {
+    display: none;
+}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Бюджет Волгоградской области</title>
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="/style/main.css" rel="stylesheet" />
+    <link href="/style/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/datepicker/jquery.datepick.css">
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <div class="flex flex-between">
+                        <div class="flex flex-vertical">
+                            <div class="logo">
+                                <a href="main.html" class="picture-link"><img src="/images/gerb.png" /></a>
+                            </div>
+                            <div>
+                                <h3 class="title">Бюджет</h3>
+                                <h3 class="title">Волгоградской области</h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-vertical">
+                            <div class="search flex flex-vertical">
+                                <form class="search-form flex flex-between">
+                                    <input placeholder="Поиск..." type="text" name="search_word" />
+                                    <input type="submit" value=" " />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <link rel="stylesheet" href="/style/components/menu.css">
+            <!-- стили меню -->
+
+            <div class="menu-line">
+                <div class="container flex flex-between">
+                    <nav class="marg-r">
+                        <ul class="topmenu">
+                            <li><a>Финансовый паспорт</a>
+                                <ul class="submenu">
+                                    <li><a href="22-main-factors.html">Основные показатели бюджета</a>
+                                    </li>
+                                    <li><a href="23-cash-planning.html">Кассовое планирование</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Управление доходами</a>
+                                <ul class="submenu">
+                                    <li><a href="24-structure-of-incomes.html">Структура доходов и исполнение доходов</a>
+                                    </li>
+                                    <li><a href="25-dynamics-of-incomes.html">Динамика доходов</a></li>
+                                    <li><a href="26-tax-revenue-management.html">Управление налоговыми доходами</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Управление расходами</a>
+                                <ul class="submenu">
+                                    <li><a href="27-government-programs.html">Управление государственными программами</a>
+                                    </li>
+                                    <li><a>Приоритетные расходы бюджета</a>
+                                        <ul class="submenu">
+                                            <li><a href="28-priority-costs.html">Чемпионат мира по футболу 2018</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="29-operative-management.html">Оперативное управление</a></li>
+                                    <li><a href="30-fund-management.html">Управление резервным фондом</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="31-control-activities.html">Контрольные мероприятия</a></li>
+                            <li><a href="32-monitoring.html">Мониторинг изменения федерального законодательства</a></li>
+                        </ul>
+                    </nav>
+                    <div class="profile flex flex-vertical">
+                        <ul class="topmenu">
+                            <li class="user-profile"><a>Иванов Иван Иванович</a>
+                                <ul class="submenu">
+                                    <li><a href="">Настройки профиля</a>
+                                    </li>
+                                    <li><a href="index.html">Выход</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="path marg-t">
+                    <a href="main.html" class="path__link">Главная</a>
+                    <span>/</span>
+                    <a href="#" class="path__link">Финансовый паспорт</a>
+                    <span>/</span>
+                    <span class="grey-text">Кассовое планирование</span>
+                </div>
+
+                <h1 class="page__name">Кассовое планирование</h1>
+
+                <link href="/style/components/UI.css" rel="stylesheet" />
+
+                <div class="switch_box">
+                    <div class="page__row">
+                        <div class="diagram__toggle">
+                            <input id="datepicker" type="text" class="dateform marg-r" value="Дата" /> <!-- Календарь -->
+                            <div class="dateform_img_display">
+                                <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
+                            </div>
+                        </div>
+                        <div class="diagram__toggle">
+                            <div class="switch">
+                                <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="true" type="radio" checked>
+                                <label for="toggle-on1" class="switch__btn change_table">Таблица</label>
+                                <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="false" type="radio">
+                                <label for="toggle-off1" class="switch__btn change_diagram">Диаграмма</label>
+                            </div>
+                            <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                        </div>
+                </div>
+                
+                <div class="diagram_box" style="display:none;">
+                 <div class="header-row marg-t">
+                    <h3>Кассовые поступления и выплаты на 01.07.2017</h3>
+                </div>
+
+                <div class="shadow-block">
+                    <div class="page__row">
+                            <div class="diagram__toggle flex-wrap">
+                            <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Год: 2017</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on4" class="toggle toggle-left" name="toggle4" value="true" type="radio" checked>
+                                                    <label for="toggle-on4" class="switch__btn">Квартал</label>
+                                                    <input id="toggle-off4" class="toggle toggle-right" name="toggle4" value="false" type="radio">
+                                                    <label for="toggle-off4" class="switch__btn">Месяц</label>
+                                 </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="true" type="radio">
+                                                    <label for="toggle-on2" class="switch__btn">Прогноз</label>
+                                                    <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="false" type="radio" checked>
+                                                    <label for="toggle-off2" class="switch__btn">Бюджет</label>
+                                 </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="true" type="radio" >
+                                                    <label for="toggle-on3" class="switch__btn">Абсолютно</label>
+                                                    <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="false" type="radio" checked>
+                                                    <label for="toggle-off3" class="switch__btn">Накопление</label>
+                                 </div>
+                                 <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Бюджет</option>
+                                       <option>Областные</option>
+                                       <option>Целевые</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                                <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Ведомство</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="marg-t">Доходы и расходы на 01.07.2017</h4>
+                        <div class="page__row marg-t">
+                            <div class="diagram__toggle flex-wrap">
+                                 <div class="switch">
+                                                    <input id="toggle-on5" class="toggle toggle-left" name="toggle5" value="true" type="radio" checked>
+                                                    <label for="toggle-on5" class="switch__btn">Текущий</label>
+                                                    <input id="toggle-off5" class="toggle toggle-right" name="toggle5" value="false" type="radio">
+                                                    <label for="toggle-off5" class="switch__btn">План</label>
+                                                    <input id="toggle-off5-1" class="toggle toggle-right" name="toggle5" value="false" type="radio">
+                                                    <label for="toggle-off5-1" class="switch__btn">Факт</label>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-center marg-t"><img src="/images/diagram/23_1.png"></div>
+                        
+                        <link rel="stylesheet" href="/style/components/accordion.css">
+                        
+                        <div class="label-accordion marg-t flex flex-between flex-vertical">
+                            <h4>Доходы на 01.07.2017</h4>
+                            <i class="fa fa-angle-down arrow-grey small-marg-l" aria-hidden="true"></i>
+                        </div>
+                            <div class="graphic">
+                            <div class="page__row marg-t">
+                                 <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Вид доходов</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-center marg-t"><img src="/images/diagram/23_2.png"></div>
+                        </div>
+                </div>
+
+                </div>
+                
+                <div class="table_box">
+                    <div class="header-row marg-t">
+                        <h3>Кассовые поступления и выплаты на 01.07.2017</h3>
+                    </div>
+                    <div class="shadow-block">
+                        <div class="page__row">
+                            <div class="diagram__toggle flex-wrap">
+                            <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Год: 2017</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on8" class="toggle toggle-left" name="toggle8" value="true" type="radio" checked>
+                                                    <label for="toggle-on8" class="switch__btn">Квартал</label>
+                                                    <input id="toggle-off8" class="toggle toggle-right" name="toggle8" value="false" type="radio">
+                                                    <label for="toggle-off8" class="switch__btn">Месяц</label>
+                                 </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on9" class="toggle toggle-left" name="toggle9" value="true" type="radio">
+                                                    <label for="toggle-on9" class="switch__btn">Прогноз</label>
+                                                    <input id="toggle-off9" class="toggle toggle-right" name="toggle9" value="false" type="radio" checked>
+                                                    <label for="toggle-off9" class="switch__btn">Бюджет</label>
+                                 </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on10" class="toggle toggle-left" name="toggle10" value="true" type="radio" checked>
+                                                    <label for="toggle-on10" class="switch__btn">Абсолютно</label>
+                                                    <input id="toggle-off10" class="toggle toggle-right" name="toggle10" value="false" type="radio">
+                                                    <label for="toggle-off10" class="switch__btn">Накопление</label>
+                                 </div>
+                                 <div class="switch marg-r small-marg-t">
+                                                    <input id="toggle-on11" class="toggle toggle-left" name="toggle11" value="true" type="radio">
+                                                    <label for="toggle-on11" class="switch__btn">Ведомство</label>
+                                                    <input id="toggle-off11" class="toggle toggle-right" name="toggle11" value="false" type="radio" checked>
+                                                    <label for="toggle-off11" class="switch__btn">Направление</label>
+                                                    <input id="toggle-off11-1" class="toggle toggle-right" name="toggle11" value="false" type="radio">
+                                                    <label for="toggle-off11-1" class="switch__btn">Вид</label>
+                                 </div>
+                                 <div class="selector small-marg-t marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Бюджет</option>
+                                       <option>Областные</option>
+                                       <option>Целевые</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <link rel="stylesheet" href="/style/components/tables.css">
+                        
+                        <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                        <div class="tableDiv">
+                            <table id="main-factors" class="table table__custom accordion-table">
+                                <thead>
+                                    <tr>
+                                        <th class="cell-scrollable">Наименование показателя</th>
+                                        <th>Закон о бюджете</th>
+                                        <th>I квартал факт</th>
+                                        <th>II квартал факт</th>
+                                        <th>III квартал факт</th>
+                                        <th>IV квартал факт</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="first incomes-first">
+                                        <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <h6>Доходы</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Налоговые и неналоговые доходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на прибыль организаций</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на доходы физических лиц</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Акцизы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Упрощенная система налогообложения</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на вмененный доход</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Единый сельскохозяйственный налог</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество физических лиц</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество организаций</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Транспортный налог</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Земельный налог</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на добычу полезных ископаемых</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Прочие налоговые доходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Неналоговые доходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Безвозмездные поступления</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Дотации</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Субсидии</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Субвенции</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Иные межбюджетные трансферты</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="first costs-first">
+                                        <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <h6>Расходы</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел I. Социально-значимые расходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Общий объём фонда оплаты труда и взносы по обязательному социальному страхованию на выплаты по оплате труда работников и иные выплаты работникам, в т.ч.</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">государственных (муниципальных) органов</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">работников автономных и бюджетных учреждений</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Социальные выплаты гражданам, в т.ч.</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">стипендии</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">расходы на обязательное медицинское страхование неработающего населения</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><h6 class="subrow-1">Недостаток средств (-) на финансовое обеспечение расходов раздела I</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел II. Первоочередные расходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Обслуживание гос. долга</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на первоочередные нужды</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на прочие нужды</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел III. Расходы</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Капитальные вложения в объекты недвижимости</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Закупка товаров, работ, услуг</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Премии и гранты</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Субсидии корпорациям</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Резервные средства</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Другие расходы (за искл. групп I, II и III)</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="first sources-first">
+                                        <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <h6>Источники</h6></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h4 class="big-marg-t page__subtitle">Справочно</h4>
+                        <span class="date page__subtitle text-right">Единица измерения: тыс. руб.</span>
+                        <div class="tableDiv">
+                            <table id="main-factors" class="table table__custom">
+                                <tbody>
+                                    <tr  class="proficit-first">
+                                        <td>Остатки средств бюджетов на 15.07.2017, всего</td>
+                                        <td>3 434,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Остатки целевых средств бюджетов</td>
+                                        <td>1 123,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">использовано целевых средств</p></td>
+                                        <td>1 123,00</td>
+                                    </tr>
+                                    <tr  class="proficit-first">
+                                        <td>Остатки средств на счете бюджетных и автономных учреждений на 15.07.2017</td>
+                                        <td>3 434,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>привлечено</td>
+                                        <td>1 123,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>перечислено</td>
+                                        <td>1 123,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="subrow-1">использовано целевых средств</p></td>
+                                        <td>1 123,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer big-marg-t">
+            <div class="container">
+                <p>&copy; Комитет финансов Волгоградской области, 2017</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         $(".diagram__toggle .switch label").click(function (){
+          if ($(this).hasClass("change_diagram")){
+           $(this).closest(".switch_box").find(".diagram_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".table_box").slideUp("slow");
+          }
+
+          if ($(this).hasClass("change_table")){
+           $(this).closest(".switch_box").find(".table_box").slideDown("slow");
+           $(this).closest(".switch_box").find(".diagram_box").slideUp("slow");
+          }
+         });
+    </script>
+    
+    <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.datepick.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <script>
+        $("#datepicker").datepick({
+            dateFormat: 'dd.mm.yyyy',
+            showOnFocus: true,
+            showTrigger: '#calImg',
+            showAnim: 'fadeIn',
+        })
+    </script>
+    
+    <script src="js/tableHeadFixer.js"></script>
+    <script>
+        $(document).ready(function() {
+			$("#main-factors").tableHeadFixer({"head" : true, "left" : 1}); 
+        });
+        
+        $('.spoiler').click(function() {
+            var $parent = $(this).parent("td").parent(".first");
+            var $sp = $(this);
+            $(this).toggleClass("fa-angle-right").toggleClass("fa-angle-down");
+            
+            if ($parent.length < 1) {
+               $parent = $(this).parent("td").parent(".second"); 
+               $parent.nextUntil(".second, .first").slideToggle(200);
+               return;
+            }
+            
+            $parent.nextUntil(".first", ".fourth").hide(100); 
+            $parent.nextUntil(".first", ".third").hide(100); 
+            $parent.nextUntil(".first", ".second").slideToggle(200);
+            $parent.nextUntil(".first", ".second").each(function() {
+                $(this).children("td:first").children("i").removeClass("fa-angle-down").addClass("fa-angle-right");
+            });
+        });
+        
+        $(".label-accordion").on( "click", function() {
+  		    $(this).next('div.graphic').slideToggle();
+        });
+    </script>
+
+
+</body>
+
+</html>
