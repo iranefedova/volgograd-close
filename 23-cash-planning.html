@@ -146,11 +146,11 @@
                                      </select>
                                      <div class="selector-btn"></div>
                                 </div>
-                                 <div class="switch marg-r small-marg-t">
-                                                    <input id="toggle-on4" class="toggle toggle-left" name="toggle4" value="true" type="radio" checked>
-                                                    <label for="toggle-on4" class="switch__btn">Квартал</label>
-                                                    <input id="toggle-off4" class="toggle toggle-right" name="toggle4" value="false" type="radio">
-                                                    <label for="toggle-off4" class="switch__btn">Месяц</label>
+                                 <div class="switch marg-r small-marg-t for_check">
+                                                    <input id="toggle-on_4" class="toggle toggle-left check" name="toggle4" value="true" type="radio" checked>
+                                                    <label for="toggle-on_4" class="switch__btn">Квартал</label>
+                                                    <input id="toggle-off_0" class="toggle toggle-right check" name="toggle4" value="false" type="radio">
+                                                    <label for="toggle-off_0" class="switch__btn">Месяц</label>
                                  </div>
                                  <div class="switch marg-r small-marg-t">
                                                     <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="true" type="radio">
@@ -180,7 +180,8 @@
                                 </div>
                             </div>
                         </div>
-                        <h4 class="marg-t">Доходы и расходы на 01.07.2017</h4>
+                        <div class="for_tabs" id="check_4">
+                            <h4 class="marg-t">Доходы и расходы на 01.07.2017</h4>
                         <div class="page__row marg-t">
                             <div class="diagram__toggle flex-wrap">
                                  <div class="switch">
@@ -285,6 +286,83 @@
                             </div>
                             <div class="flex flex-center marg-t"><img src="/images/diagram/23_6.png"></div>
                         </div>
+                        </div>
+                        
+                        <div class="for_tabs" id="check_0" style="display: none;">
+                            <h4 class="marg-t">Кассовые поступления и выплаты на 01.07.2017</h4>
+                        <div class="page__row marg-t">
+                            <div class="diagram__toggle flex-wrap">
+                                 <div class="switch">
+                                                    <input id="toggle-on12" class="toggle toggle-left" name="toggle12" value="true" type="radio" checked>
+                                                    <label for="toggle-on12" class="switch__btn">Текущий</label>
+                                                    <input id="toggle-off12" class="toggle toggle-right" name="toggle12" value="false" type="radio">
+                                                    <label for="toggle-off12" class="switch__btn">План</label>
+                                                    <input id="toggle-off12-1" class="toggle toggle-right" name="toggle12" value="false" type="radio">
+                                                    <label for="toggle-off12-1" class="switch__btn">Факт</label>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-center marg-t"><img src="/images/diagram/23_7.png"></div>
+                        
+                        <link rel="stylesheet" href="/style/components/accordion.css">
+                        
+                        <div class="label-accordion marg-t flex flex-between flex-vertical">
+                            <h4>Поступления на 01.07.2017</h4>
+                            <i class="fa fa-angle-down arrow-grey small-marg-l" aria-hidden="true"></i>
+                        </div>
+                            <div class="graphic">
+                            <div class="page__row marg-t">
+                                <div class="diagram__toggle flex-wrap">
+                                 <div class="switch marg-r">
+                                                    <input id="toggle-on13" class="toggle toggle-left" name="toggle13" value="true" type="radio">
+                                                    <label for="toggle-on13" class="switch__btn">Доходы</label>
+                                                    <input id="toggle-off13" class="toggle toggle-right" name="toggle13" value="false" type="radio" checked>
+                                                    <label for="toggle-off13" class="switch__btn">Источники</label>
+                                 </div>
+                                 <div class="selector marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Вид источников</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="flex flex-center marg-t"><img src="/images/diagram/23_8.png"></div>
+                        </div>
+                        <div class="label-accordion marg-t flex flex-between flex-vertical">
+                            <h4>Выплаты на 01.07.2017</h4>
+                            <i class="fa fa-angle-down arrow-grey small-marg-l" aria-hidden="true"></i>
+                        </div>
+                            <div class="graphic">
+                            <div class="page__row marg-t">
+                                <div class="diagram__toggle flex-wrap">
+                                <div class="selector marg-r">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Расходы</option>
+                                       <option>Общие</option>
+                                       <option>Источники</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                                 <div class="switch marg-r">
+                                                    <input id="toggle-on14" class="toggle toggle-left" name="toggle14" value="true" type="radio" checked>
+                                                    <label for="toggle-on14" class="switch__btn">Ведомство</label>
+                                                    <input id="toggle-off14" class="toggle toggle-right" name="toggle14" value="false" type="radio">
+                                                    <label for="toggle-off14" class="switch__btn">Направление</label>
+                                                    <input id="toggle-off14-1" class="toggle toggle-right" name="toggle14" value="false" type="radio">
+                                                    <label for="toggle-off14-1" class="switch__btn">Вид</label>
+                                 </div>
+                                 <div class="selector">
+                                     <select size="1" class="selector-input">
+                                       <option selected>Ведомство</option>
+                                     </select>
+                                     <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="flex flex-center marg-t"><img src="/images/diagram/23_9.png"></div>
+                        </div>
+                        </div>
                 </div>
 
                 </div>
@@ -302,11 +380,11 @@
                                      </select>
                                      <div class="selector-btn"></div>
                                 </div>
-                                 <div class="switch marg-r small-marg-t">
-                                                    <input id="toggle-on8" class="toggle toggle-left" name="toggle8" value="true" type="radio" checked>
-                                                    <label for="toggle-on8" class="switch__btn">Квартал</label>
-                                                    <input id="toggle-off8" class="toggle toggle-right" name="toggle8" value="false" type="radio">
-                                                    <label for="toggle-off8" class="switch__btn">Месяц</label>
+                                 <div class="switch marg-r small-marg-t for_check">
+                                                    <input id="toggle-on_8" class="toggle toggle-left check" name="toggle8" value="true" type="radio" checked>
+                                                    <label for="toggle-on_8" class="switch__btn">Квартал</label>
+                                                    <input id="toggle-off_12" class="toggle toggle-right check" name="toggle8" value="false" type="radio">
+                                                    <label for="toggle-off_12" class="switch__btn">Месяц</label>
                                  </div>
                                  <div class="switch marg-r small-marg-t">
                                                     <input id="toggle-on9" class="toggle toggle-left" name="toggle9" value="true" type="radio">
@@ -341,7 +419,8 @@
                         
                         <link rel="stylesheet" href="/style/components/tables.css">
                         
-                        <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                        <div class="for_tabs" id="check_8">
+                            <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
                         <div class="tableDiv">
                             <table id="main-factors" class="table table__custom accordion-table">
                                 <thead>
@@ -687,6 +766,1964 @@
                             </table>
                         </div>
                         
+                        </div>
+                        
+                        <div class="for_tabs" id="check_12" style="display: none;">
+                            <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                        <div class="tableDiv">
+                            <table id="vedomstvo" class="table table__custom accordion-table">
+                                <thead>
+                                    <tr>
+                                        <th class="cell-scrollable">Наименование показателя</th>
+                                        <th>Закон о бюджете</th>
+                                        <th>янв</th>
+                                        <th>фев</th>
+                                        <th>мар</th>
+                                        <th>ИТОГО за I квартал</th>
+                                        <th>апр</th>
+                                        <th>май</th>
+                                        <th>июн</th>
+                                        <th>ИТОГО за I полугодие</th>
+                                        <th>июл</th>
+                                        <th>авг</th>
+                                        <th>сен</th>
+                                        <th>ИТОГО за 9 месяцев</th>
+                                        <th>окт</th>
+                                        <th>ноя</th>
+                                        <th>дек</th>
+                                        <th>ИТОГО за год</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <tr class="first main-line">
+                                       <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><h6>Ведомство 1</h6></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                   </tr>
+                                   <tr class="second incomes-first">
+                                        <td><h6 class="upper">Кассовые поступления</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-first">
+                                        <td><h6>Доходы</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Налоговые и неналоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на прибыль организаций</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на доходы физических лиц</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Акцизы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Упрощенная система налогообложения</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на вмененный доход</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Единый сельскохозяйственный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество физических лиц</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество организаций</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Транспортный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Земельный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на добычу полезных ископаемых</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Прочие налоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Неналоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Безвозмездные поступления</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Дотации</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Субсидии</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Субвенции</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Иные межбюджетные трансферты</p></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second sources-first">
+                                        <td><h6>Источники финансирования дефицита бюджета</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second rest-first">
+                                        <td><h6>Изменение остатков средств бюджетов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6 class="upper">Кассовые выплаты</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6>Расходы</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел I. Социально-значимые расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Общий объём фонда оплаты труда и взносы по обязательному социальному страхованию на выплаты по оплате труда работников и иные выплаты работникам, в т.ч.</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">государственных (муниципальных) органов</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">работников автономных и бюджетных учреждений</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Социальные выплаты гражданам, в т.ч.</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">стипендии</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">расходы на обязательное медицинское страхование неработающего населения</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел II. Первоочередные расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Обслуживание гос. долга</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на первоочередные нужды</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на прочие нужды</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел III. Расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Капитальные вложения в объекты недвижимости</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Закупка товаров, работ, услуг</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Премии и гранты</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Субсидии корпорациям</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Резервные средства</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Другие расходы (за искл. групп I, II и III)</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6>Итого расходов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second sources-first">
+                                        <td><h6>Источники финансирования дефицита бюджета</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second rest-first">
+                                        <td><h6>Изменение остатков средств бюджетов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second proficit-first">
+                                        <td><h6 class="upper">Сальдо</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    
+                                    <tr class="first main-line">
+                                       <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><h6>Ведомство 2</h6></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                   </tr>
+                                   <tr class="second incomes-first">
+                                        <td><h6 class="upper">Кассовые поступления</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-first">
+                                        <td><h6>Доходы</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Налоговые и неналоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на прибыль организаций</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на доходы физических лиц</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Акцизы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Упрощенная система налогообложения</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на вмененный доход</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Единый сельскохозяйственный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество физических лиц</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на имущество организаций</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Транспортный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Земельный налог</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Налог на добычу полезных ископаемых</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Прочие налоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third">
+                                        <td><p class="subrow-2">Неналоговые доходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second incomes-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Безвозмездные поступления</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Дотации</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Субсидии</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Субвенции</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-2">Иные межбюджетные трансферты</p></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second sources-first">
+                                        <td><h6>Источники финансирования дефицита бюджета</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second rest-first">
+                                        <td><h6>Изменение остатков средств бюджетов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6 class="upper">Кассовые выплаты</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6>Расходы</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел I. Социально-значимые расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Общий объём фонда оплаты труда и взносы по обязательному социальному страхованию на выплаты по оплате труда работников и иные выплаты работникам, в т.ч.</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">государственных (муниципальных) органов</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">работников автономных и бюджетных учреждений</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Социальные выплаты гражданам, в т.ч.</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">стипендии</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="fourth">
+                                        <td><p class="subrow-3">расходы на обязательное медицинское страхование неработающего населения</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел II. Первоочередные расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Обслуживание гос. долга</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на первоочередные нужды</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Расходы на прочие нужды</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Раздел III. Расходы</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Капитальные вложения в объекты недвижимости</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Закупка товаров, работ, услуг</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Премии и гранты</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Субсидии корпорациям</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="third costs-third">
+                                        <td><p class="subrow-2">Резервные средства</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-second">
+                                        <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i> <p>Другие расходы (за искл. групп I, II и III)</p></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second costs-first">
+                                        <td><h6>Итого расходов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second sources-first">
+                                        <td><h6>Источники финансирования дефицита бюджета</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second rest-first">
+                                        <td><h6>Изменение остатков средств бюджетов</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    <tr class="second proficit-first">
+                                        <td><h6 class="upper">Сальдо</h6></td>
+                                        <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td class="itog-sell"></td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        </div>
+                        
                         <h4 class="big-marg-t page__subtitle">Справочно</h4>
                         <span class="date page__subtitle text-right">Единица измерения: тыс. руб.</span>
                         <div class="tableDiv">
@@ -769,6 +2806,7 @@
     <script>
         $(document).ready(function() {
 			$("#main-factors").tableHeadFixer({"head" : true, "left" : 1}); 
+			$("#vedomstvo").tableHeadFixer({"head" : true, "left" : 1}); 
         });
         
         $('.spoiler').click(function() {
@@ -794,6 +2832,16 @@
   		    $(this).next('div.graphic').slideToggle();
             $(this).children("i").toggleClass("fa-angle-down").toggleClass("fa-angle-up");
         });
+    </script>
+    
+    <script>
+         $(".for_check .check").click(function (){
+             var $num = $(this).attr('id').split('_')[1];
+             
+              $(this).closest(".shadow-block").find("div.for_tabs").slideUp("250");
+              $(this).closest(".switch_box").find("div#check_" + $num).slideDown("250");
+
+         });
     </script>
 
 

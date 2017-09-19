@@ -22,12 +22,28 @@
     background-color: rgb(230, 230, 230);
 }
 
+.itog-sell {
+    background-color: rgba(120, 120, 120, .17);
+}
+
 .sources-first {
     background-color: rgb(224, 217, 238);
 }
 
 .rest-first {
     background-color: rgb(198, 238, 236);
+}
+
+.main-line {
+    background-color: rgb(183, 226, 255);
+}
+
+.main-line td {
+    border: none;
+}
+
+.main-line td:first-child {
+    box-shadow: none !important;
 }
 
 .second, .third, .fourth {
