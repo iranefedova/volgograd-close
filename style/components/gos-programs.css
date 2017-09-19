@@ -17,3 +17,55 @@
     background-color: #5eb4d7;
     background-image: url("../../images/Miniatures/Family.png");
 }
+
+.blue-text {
+    color: #3e73a4;
+    font-size: 24px;
+    font-family: 'Proxima Nova Bold';
+}
+
+.diagram > div {
+    position: relative;
+    min-height: 90px;
+    color: #fff;
+    border-right: #fff 3px solid;
+}
+
+.diagram > div p {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    word-wrap: break-word;
+    max-width: 90%;
+}
+
+.diagram > div:nth-child(1) {
+    background: #8dc2d7;
+}
+
+.diagram > div:nth-child(2) {
+    background: #84abd2;
+}
+
+.diagram > div:nth-child(3) {
+    background: #529acb;
+}
+
+.diagram > div:nth-child(4) {
+    background: #2d7bb0;
+}
+
+.diagram > div:nth-child(5) {
+    background: #828bc4;
+}
+
+.diagram > div:nth-child(6) {
+    background: #c2bec3;
+}
+
+.diagram > div > .inside {
+    height: 100%;
+    content: "";
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%5c7e8c' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}

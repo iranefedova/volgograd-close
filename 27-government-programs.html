@@ -140,13 +140,7 @@
                         <div class="shadow-block">
                             <div class="page__row">
                                 <div class="diagram__toggle  flex-wrap">
-                                    <div class="selector small-marg-t marg-r">
-                                        <select size="1" class="selector-input">
-                                           <option selected>Ведомство</option>
-                                         </select>
-                                        <div class="selector-btn"></div>
-                                    </div>
-                                    <div class="switch small-marg-t marg-r">
+                                    <div class="switch marg-r">
                                         <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="true" type="radio" checked>
                                         <label for="toggle-on2" class="switch__btn">Общий объем</label>
                                         <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="false" type="radio">
@@ -155,7 +149,7 @@
                                         <label for="toggle-off2-1" class="switch__btn">Текущий год</label>
                                     </div>
                                 </div>
-                                <div class="diagram__toggle small-marg-t">
+                                <div class="diagram__toggle">
                                     <div class="switch">
                                         <input id="toggle-on1" class="toggle toggle-left" name="toggle" value="true" type="radio" checked>
                                         <label for="toggle-on1" class="switch__btn change_table">Таблица</label>
@@ -166,17 +160,81 @@
                                 </div>
                             </div>
                             <div class="diagram_box" style="display:none;">
-
+                                <h4 class="marg-t">Объем финансирования государственных программ Волгоградской области на 01.07.2017</h4>
+                                <div class="marg-t flex flex-center flex-adapt-wrap">
+                                    <div><img src="images/diagram/27_1.png" class="marg-r"></div>
+                                    <div><img src="images/diagram/27_2.png" ></div>
+                                </div>
+                                <h4 class="marg-t">Доля госпрограмм в общем объёме финансирования госпрограмм Волгоградской области на 01.07.2017</h4>
+                                <div class="page__row marg-t">
+                                    <div class="diagram__toggle">
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Ведомство</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Источник</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex marg-t flex-vertical">
+                                    <div style="flex-basis: 88%;" class="small-marg-r">
+                                        <div class="diagram flex">
+                                            <div style="width: 22%;"><p>Госпрограмма 1</p><div class="inside" style="width: 50%;"></div></div>
+                                            <div style="width: 20%;"><p>Госпрограмма 2</p><div class="inside" style="width: 30%;"></div></div>
+                                            <div style="width: 17%;"><p>Госпрограмма 3</p><div class="inside" style="width: 70%;"></div></div>
+                                            <div style="width: 15%;"><p>Госпрограмма 4</p><div class="inside" style="width: 70%;"></div></div>
+                                            <div style="width: 14%;"><p>Госпрограмма 5</p><div class="inside" style="width: 20%;"></div></div>
+                                            <div style="width: 10%;"><p>Иные</p><div class="inside" style="width: 90%;"></div></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex-basis: 15%;"><p class="grey-text f16">Всего госпрограмм</p>
+                                    <p class="blue-text">33</p>
+                                    <p class="blue-text">12 567 <span class="grey-text">тыс. руб.</span></p></div>
+                                </div>
+                                <h4 class="marg-t">Реализация госпрограмм на 01.07.2017</h4>
+                                <div class="page__row marg-t">
+                                    <div class="diagram__toggle">
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Ведомство</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Источник</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marg-t flex flex-center">
+                                    <img src="/images/diagram/27_3.png">
+                                </div>
                             </div>
 
                             <div class="table_box">
                               <div class="page__row">
-                                  <div class="switch small-marg-t marg-r">
-                                        <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="true" type="radio" checked>
-                                        <label for="toggle-on3" class="switch__btn">Фактическое исполнение</label>
-                                        <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="false" type="radio">
-                                        <label for="toggle-off3" class="switch__btn">Исполнение %</label>
+                                 <div class="diagram__toggle">
+                                     <div class="selector small-marg-t marg-r">
+                                        <select size="1" class="selector-input">
+                                           <option selected>Ведомство</option>
+                                         </select>
+                                        <div class="selector-btn"></div>
                                     </div>
+                                      <div class="switch small-marg-t marg-r">
+                                            <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="true" type="radio" checked>
+                                            <label for="toggle-on3" class="switch__btn">Фактическое исполнение</label>
+                                            <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="false" type="radio">
+                                            <label for="toggle-off3" class="switch__btn">Исполнение %</label>
+                                        </div>
+                                 </div>
                               </div>
                                <div class="page__row flex-vertical marg-t flex-start">
                                 <p class="marg-r">Сортировка:</p>
@@ -424,6 +482,750 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="for_tabs" id="check_2" style="display: none;">
+                    <div class="switch_box">
+                        <div class="header-row marg-t">
+                            <h3>Исполнение государственных программ за счет средств областного бюджета на 01.07.2017</h3>
+                        </div>
+                        <div class="shadow-block">
+                            <div class="page__row">
+                                <div class="diagram__toggle  flex-wrap">
+                                    <div class="switch marg-r">
+                                        <input id="toggle1-on2" class="toggle toggle-left" name="toggle2_1" value="true" type="radio" checked>
+                                        <label for="toggle1-on2" class="switch__btn">Общий объем</label>
+                                        <input id="toggle1-off2" class="toggle toggle-right" name="toggle2_1" value="false" type="radio">
+                                        <label for="toggle1-off2" class="switch__btn">Бюджетный цикл</label>
+                                        <input id="toggle1-off2-1" class="toggle toggle-right" name="toggle2_1" value="false" type="radio">
+                                        <label for="toggle1-off2-1" class="switch__btn">Текущий год</label>
+                                    </div>
+                                </div>
+                                <div class="diagram__toggle">
+                                    <div class="switch">
+                                        <input id="toggle1-on1" class="toggle toggle-left" name="toggle_1" value="true" type="radio" checked>
+                                        <label for="toggle1-on1" class="switch__btn change_table">Таблица</label>
+                                        <input id="toggle1-off1" class="toggle toggle-right" name="toggle_1" value="false" type="radio">
+                                        <label for="toggle1-off1" class="switch__btn change_diagram">Диаграмма</label>
+                                    </div>
+                                    <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                                </div>
+                            </div>
+                            <div class="diagram_box" style="display:none;">
+                                <h4 class="marg-t">Объем финансирования государственных программ Волгоградской области на 01.07.2017</h4>
+                                <div class="marg-t flex flex-center flex-adapt-wrap">
+                                    <div><img src="images/diagram/27_1.png" class="marg-r"></div>
+                                    <div><img src="images/diagram/27_2.png" ></div>
+                                </div>
+                                <h4 class="marg-t">Доля госпрограмм в общем объёме финансирования госпрограмм Волгоградской области на 01.07.2017</h4>
+                                <div class="page__row marg-t">
+                                    <div class="diagram__toggle">
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Ведомство</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Источник</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex marg-t flex-vertical">
+                                    <div style="flex-basis: 88%;" class="small-marg-r">
+                                        <div class="diagram flex">
+                                            <div style="width: 22%;"><p>Госпрограмма 1</p><div class="inside" style="width: 50%;"></div></div>
+                                            <div style="width: 20%;"><p>Госпрограмма 2</p><div class="inside" style="width: 30%;"></div></div>
+                                            <div style="width: 17%;"><p>Госпрограмма 3</p><div class="inside" style="width: 70%;"></div></div>
+                                            <div style="width: 15%;"><p>Госпрограмма 4</p><div class="inside" style="width: 70%;"></div></div>
+                                            <div style="width: 14%;"><p>Госпрограмма 5</p><div class="inside" style="width: 20%;"></div></div>
+                                            <div style="width: 10%;"><p>Иные</p><div class="inside" style="width: 90%;"></div></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex-basis: 15%;"><p class="grey-text f16">Всего госпрограмм</p>
+                                    <p class="blue-text">33</p>
+                                    <p class="blue-text">12 567 <span class="grey-text">тыс. руб.</span></p></div>
+                                </div>
+                                <h4 class="marg-t">Объем расходов в разрезе госпрограмм на 01.07.2017</h4>
+                                <div class="page__row marg-t">
+                                    <div class="diagram__toggle">
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Ведомство</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                        <div class="selector marg-r">
+                                            <select size="1" class="selector-input">
+                                               <option selected>Источник</option>
+                                             </select>
+                                            <div class="selector-btn"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marg-t flex flex-center">
+                                    <img src="/images/diagram/27_4.png">
+                                </div>
+                            </div>
+
+                            <div class="table_box">
+                              <div class="page__row">
+                                 <div class="diagram__toggle">
+                                     <div class="selector small-marg-t marg-r">
+                                        <select size="1" class="selector-input">
+                                           <option selected>Ведомство</option>
+                                         </select>
+                                        <div class="selector-btn"></div>
+                                    </div>
+                                      <div class="switch small-marg-t marg-r">
+                                            <input id="toggle1-on3" class="toggle toggle-left" name="toggle3_1" value="true" type="radio" checked>
+                                            <label for="toggle1-on3" class="switch__btn">Текущий</label>
+                                            <input id="toggle1-off3" class="toggle toggle-right" name="toggle3_1" value="false" type="radio">
+                                            <label for="toggle1-off3" class="switch__btn">План</label>
+                                            <input id="toggle12-off3" class="toggle toggle-right" name="toggle3_1" value="false" type="radio">
+                                            <label for="toggle12-off3" class="switch__btn">Факт</label>
+                                        </div>
+                                 </div>
+                              </div>
+                               <div class="page__row flex-vertical marg-t flex-start">
+                                <p class="marg-r">Сортировка:</p>
+                                <div class="selector marg-r">
+                                    <select size="1" class="selector-input">
+                                           <option selected>Наилучший результат</option>
+                                         </select>
+                                    <div class="selector-btn"></div>
+                                </div>
+                                <div class="selector marg-r">
+                                    <select size="1" class="selector-input">
+                                           <option selected>Объем финансирования</option>
+                                           <option>Фактическое исполнение</option>
+                                           <option>Исполнение %</option>
+                                         </select>
+                                    <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                                <link rel="stylesheet" href="/style/components/tables.css">
+                                <link rel="stylesheet" href="/style/components/gos-programs.css">
+                                <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                                <div class="tableDiv">
+                                    <table class="table table__custom" id="gp2">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2" class="cell-scrollable">Наименование показателя</th>
+                                                <th rowspan="2">Период реализации</th>
+                                                <th rowspan="2">Ответственный исполнитель</th>
+                                                <th colspan="3">Плановые объемы финансирования</th>
+                                                <th colspan="3">Фактическое исполнение</th>
+                                                <th colspan="3">Исполнение, %</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Всего</th>
+                                                <th>Областные</th>
+                                                <th>Целевые</th>
+                                                <th>Всего</th>
+                                                <th>Областные</th>
+                                                <th>Целевые</th>
+                                                <th>Всего</th>
+                                                <th>Областные</th>
+                                                <th>Целевые</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="first costs-first">
+                                                <td><h6>Всего</h6></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>                                    
+                                            </tr>
+                                            <tr class="first costs-second">
+                                                <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><div class="circle secure small-marg-r"></div><h6>Государственная программа 1</h6></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 1</td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 1</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 1</td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 2</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 2</td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="first costs-second">
+                                                <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><div class="circle social small-marg-r"></div><h6>Государственная программа 2</h6></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 2</td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 1</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 3</td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="first costs-first">
+                                                <td><h6>Итого</h6></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="for_tabs" id="check_3" style="display: none;">
+                    <div class="switch_box">
+                        <div class="header-row marg-t">
+                            <h3>Динамика по государственным программам на 01.07.2017</h3>
+                        </div>
+                        <div class="shadow-block">
+                            <div class="page__row">
+                                <div class="diagram__toggle  flex-wrap">
+                                   <div class="selector small-marg-t marg-r">
+                                        <select size="1" class="selector-input">
+                                           <option selected>Ведомство</option>
+                                         </select>
+                                        <div class="selector-btn"></div>
+                                    </div>
+                                    <div class="switch marg-r small-marg-t">
+                                        <input id="toggle2-on2" class="toggle toggle-left" name="toggle2_2" value="true" type="radio" checked>
+                                        <label for="toggle2-on2" class="switch__btn">Общий объем</label>
+                                        <input id="toggle2-off2" class="toggle toggle-right" name="toggle2_2" value="false" type="radio">
+                                        <label for="toggle2-off2" class="switch__btn">Бюджетный цикл</label>
+                                    </div>
+                                    <div class="switch small-marg-t marg-r">
+                                            <input id="toggle2-on3" class="toggle toggle-left" name="toggle3_2" value="true" type="radio" checked>
+                                            <label for="toggle2-on3" class="switch__btn">Текущий</label>
+                                            <input id="toggle2-off3" class="toggle toggle-right" name="toggle3_2" value="false" type="radio">
+                                            <label for="toggle2-off3" class="switch__btn">План</label>
+                                            <input id="toggle21-off3" class="toggle toggle-right" name="toggle3_2" value="false" type="radio">
+                                            <label for="toggle21-off3" class="switch__btn">Факт</label>
+                                        </div>
+                                        <div class="selector small-marg-t marg-r">
+                                        <select size="1" class="selector-input">
+                                           <option selected>Бюджет</option>
+                                           <option>Областные</option>
+                                           <option>Целевые</option>
+                                         </select>
+                                        <div class="selector-btn"></div>
+                                    </div>
+                                </div>
+                                <div class="diagram__toggle">
+                                    <div class="switch small-marg-t">
+                                        <input id="toggle2-on1" class="toggle toggle-left" name="toggle_2" value="true" type="radio" checked>
+                                        <label for="toggle2-on1" class="switch__btn change_table">Таблица</label>
+                                        <input id="toggle2-off1" class="toggle toggle-right" name="toggle_2" value="false" type="radio">
+                                        <label for="toggle2-off1" class="switch__btn change_diagram">Диаграмма</label>
+                                    </div>
+                                    <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                                </div>
+                            </div>
+                            <div class="diagram_box" style="display:none;">
+                                <div class="marg-t flex flex-center">
+                                    <div><img src="images/diagram/27_5.png" class="marg-r"></div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="table_box">
+                               <div class="page__row flex-vertical marg-t flex-start">
+                                <p class="marg-r">Сортировка:</p>
+                                <div class="selector marg-r">
+                                    <select size="1" class="selector-input">
+                                           <option selected>Наилучший результат</option>
+                                         </select>
+                                    <div class="selector-btn"></div>
+                                </div>
+                                <div class="selector marg-r">
+                                    <select size="1" class="selector-input">
+                                           <option selected>Объем финансирования</option>
+                                           <option>Фактическое исполнение</option>
+                                           <option>Исполнение %</option>
+                                         </select>
+                                    <div class="selector-btn"></div>
+                                </div>
+                            </div>
+                                <link rel="stylesheet" href="/style/components/tables.css">
+                                <link rel="stylesheet" href="/style/components/gos-programs.css">
+                                <span class="date page__subtitle text-right marg-t">Единица измерения: тыс. руб.</span>
+                                <div class="tableDiv">
+                                    <table class="table table__custom" id="gp3">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2" class="cell-scrollable">Наименование показателя</th>
+                                                <th rowspan="2">Период реализации</th>
+                                                <th rowspan="2">Ответственный исполнитель</th>
+                                                <th rowspan="2">Общие объемы финансирования</th>
+                                                <th colspan="3">Объемы финансирования на текущую дату</th>
+                                                <th colspan="3">2015 год</th>
+                                                <th colspan="3">2016 год</th>
+                                                <th colspan="3">2017 год</th>
+                                                <th rowspan="2">2018 год (план)</th>
+                                                <th rowspan="2">2019 год (план)</th>
+                                                <th colspan="2">Общее исполнение</th>
+                                            </tr>
+                                            <tr>
+                                                <th>План</th>
+                                                <th>Фактическое исполнение</th>
+                                                <th>Исполнение, %</th>
+                                                <th>План</th>
+                                                <th>Фактическое исполнение</th>
+                                                <th>Исполнение, %</th>
+                                                <th>План</th>
+                                                <th>Фактическое исполнение</th>
+                                                <th>Исполнение, %</th>
+                                                <th>План</th>
+                                                <th>Фактическое исполнение</th>
+                                                <th>Исполнение, %</th>
+                                                <th>Факт</th>
+                                                <th>Исполнение, %</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="first costs-first">
+                                                <td><h6>Всего</h6></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>                                   
+                                            </tr>
+                                            <tr class="first costs-second">
+                                                <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><div class="circle secure small-marg-r"></div><h6>Государственная программа 1</h6></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 1</td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 1</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 1</td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>  
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 2</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 2</td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>  
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="first costs-second">
+                                                <td><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><div class="circle social small-marg-r"></div><h6>Государственная программа 2</h6></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 2</td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="second costs-third">
+                                                <td class="subrow-1"><i class="fa fa-angle-right arrow-grey small-marg-r spoiler" aria-hidden="true"></i><p>Подпрограмма 1</p></td>
+                                                <td>2015-2019</td>
+                                                <td>Ведомство 3</td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие 1</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>  
+                                            </tr>
+                                            <tr class="third">
+                                                <td><p class="subrow-2">основное мероприятие N</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                            <tr class="first costs-first">
+                                                <td><h6>Итого</h6></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="itog-sell"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -469,6 +1271,14 @@
                 "head": true,
                 "left": 1
             });
+            $("#gp2").tableHeadFixer({
+                "head": true,
+                "left": 1
+            });
+            $("#gp3").tableHeadFixer({
+                "head": true,
+                "left": 1
+            });
         });
 
         $('.spoiler').click(function() {
@@ -500,8 +1310,8 @@
         $(".for_check .check").click(function() {
             var $num = $(this).attr('id').split('_')[1];
 
-            $(this).closest(".shadow-block").find("div.for_tabs").slideUp("250");
-            $(this).closest(".switch_box").find("div#check_" + $num).slideDown("250");
+           $("div.for_tabs").slideUp("250");
+           $("div#check_" + $num).slideDown("250");
 
         });
     </script>
