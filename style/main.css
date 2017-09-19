@@ -248,6 +248,10 @@ a:active {
     flex-direction: column;
 }
 
+.flex-start {
+    justify-content: flex-start !important;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
