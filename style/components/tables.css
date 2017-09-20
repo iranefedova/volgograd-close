@@ -50,6 +50,19 @@
     display: none;
 }
 
+.more_info, .less_info {
+    background-color: #ededed;
+}
+
+.more_info p, .less_info p {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.more_info p:hover, .less_info p:hover {
+    text-decoration: none;
+}
+
 td h6 {
     margin-top: 5px;
     overflow: hidden;
@@ -89,4 +102,20 @@ td h6 {
 
 tr.totals td {
     font-family: 'Proxima Nova Bold';
+}
+
+.table__passport td {
+    white-space: normal;
+}
+
+.table__passport > tbody:first-child > tr:nth-child(2n) {
+    background-color: rgb(244, 245, 246); 
+}
+
+.table__passport > tbody:last-child > tr:nth-child(2n+1) {
+    background-color: rgb(244, 245, 246); 
+}
+
+.table__passport > tbody:last-child > tr:nth-child(2n) {
+    background-color: rgb(255, 255, 255); 
 }
